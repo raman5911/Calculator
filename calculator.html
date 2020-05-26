@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div id="text">
+            <h1 id="input">0</h1>
+            <p id="output"></p>
+        </div>
+
+        <!--Symbols-->
+        <div onclick="calculate('c')" class="symbol" id="c"><span>C</span></div>
+        <div onclick="calculate('ac')" class="symbol" id="ac"><span>AC</span></div>
+        <div onclick="calculate('%')" class="symbol" id="percent"><span>%</span></div>
+        <div onclick="calculate('/')" class="symbol" id="divide"><span>/</span></div>
+        <div onclick="calculate('*')" class="symbol" id="multiply"><span>x</span></div>
+        <div onclick="calculate('-')" class="symbol" id="minus"><span>-</span></div>
+        <div onclick="calculate('+')" class="symbol" id="plus"><span>+</span></div>
+        <div onclick="calculate('=')" class="symbol" id="equal"><span>=</span></div>
+
+        <!--Numbers-->
+        <div onclick="calculate('7')" class="number" id="first"><span>7</span></div>
+        <div onclick="calculate('8')" class="number" id="first"><span>8</span></div>
+        <div onclick="calculate('9')" class="number" id="first"><span>9</span></div>
+
+        <div onclick="calculate('4')" class="number" id="second"><span>4</span></div>
+        <div onclick="calculate('5')" class="number" id="second"><span>5</span></div>
+        <div onclick="calculate('6')" class="number" id="second"><span>6</span></div>
+
+        <div onclick="calculate('1')" class="number" id="third"><span>1</span></div>
+        <div onclick="calculate('2')" class="number" id="third"><span>2</span></div>
+        <div onclick="calculate('3')" class="number" id="third"><span>3</span></div>
+        
+        <div onclick="calculate('0')" class="number zero" id="last"><span>0</span></div>
+        <div onclick="calculate('.')" class="point" id="last"><span>.</span></div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>
+

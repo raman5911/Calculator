@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgba(65, 221, 44, 0.452);
+    padding: 20px;
+}
+.main
+{
+    background-color: #fff;
+    margin: auto;
+    height: 450px;
+    width: 300px;            
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6px;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+/* div
+{
+    border: 1px solid #000;
+} */
+#text
+{
+    background-color: rgba(248, 215, 144, 0.534);
+    border: none;
+    border-radius: 5px;
+    grid-column: 1/-1;
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+    margin: 5px 3px;
+    
+}
+.symbol, .number, .point
+{
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.symbol
+{
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgba(255, 181, 138, 0.671);
+    color: #fff;
+}
+.symbol:hover
+{
+    background-color: rgb(255, 181, 138);
+    color: #fff;
+}
+.number, .point
+{
+    background-color: rgba(224, 224, 224, 0.541);
+}
+.number:hover, .point:hover
+{
+    background-color: rgba(194, 193, 193, 0.719);
+}
+#multiply, #minus, #plus, #equal
+{
+    grid-column: 4/5;
+}
+#equal
+{
+    border-radius: 10px;
+    grid-row: 5/-1;
+    background-color: rgba(98, 207, 250, 0.87);
+    color: #fff;
+}
+#equal:hover
+{
+    background-color: rgb(43, 195, 255);
+}
+#first
+{
+    grid-row: 3/4;
+}
+#second
+{
+    grid-row: 4/5;
+}
+#third
+{
+    grid-row: 5/6;
+}
+#last
+{
+    grid-row: 6/7;
+    text-align: center;
+}
+.zero
+{
+    grid-column: 2/3;
+}
+#percent
+{
+    grid-row: 6/7;
+    grid-column: 3/4;
+
+}
+.point
+{
+    font-size: larger;
+}
+#input
+{
+    font-size: 34px;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+    transition: all 0.5s;
+}
+#output
+{
+    position: relative;
+    top: 0;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
